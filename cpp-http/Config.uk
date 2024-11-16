@@ -1,0 +1,10 @@
+config APPHTTPCPP
+bool "Configure C++ HTTP"
+default y
+
+	# Select C++ libraries.
+	select LIBCOMPILER_RT
+	select LIBCXX
+	select LIBCXXABI
+	select LIBUNWIND
+	select LIBMUSL
