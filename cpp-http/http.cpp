@@ -18,7 +18,7 @@ int main()
 
     sfd = socket(AF_INET, SOCK_STREAM, 0);
     if(sfd < 0){
-        std::cerr << "failed to create a socket" << std::endl;
+        std::cerr << "failed to create a socket: " << sfd << std::endl;
         goto err;
     }
 

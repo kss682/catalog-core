@@ -1,0 +1,12 @@
+config APPHELLOWORLDGO
+bool "Configure GO Hello World"
+default y
+
+	select LIBGO
+	select LIBGO_MAIN_FUNCTION
+
+	# Select C++ libraries.
+	select LIBCOMPILER_RT
+	select LIBUNWIND
+	select LIBMUSL
+	select LIBLWIP
